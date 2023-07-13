@@ -64,19 +64,7 @@
 #' summary(corpus(data_char_ukimmig2010,
 #'                docvars = data.frame(party = names(data_char_ukimmig2010))), 5)
 #'
-#' # import a tm VCorpus
-#' if (requireNamespace("tm", quietly = TRUE)) {
-#'     data(crude, package = "tm")    # load in a tm example VCorpus
-#'     vcorp <- corpus(crude)
-#'     summary(vcorp)
-#'
-#'     data(acq, package = "tm")
-#'     summary(corpus(acq), 5)
-#'
-#'     vcorp2 <- tm::VCorpus(tm::VectorSource(data_char_ukimmig2010))
-#'     corp <- corpus(vcorp2)
-#'     summary(corp)
-#' }
+
 #'
 #' # construct a corpus from a data.frame
 #' dat <- data.frame(letter_factor = factor(rep(letters[1:3], each = 2)),
