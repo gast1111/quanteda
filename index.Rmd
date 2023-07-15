@@ -2,10 +2,7 @@
 output: md_document
 ---
 
-
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
+= TRUE,
   comment = "##",
   fig.path = "man/images/"
 )
