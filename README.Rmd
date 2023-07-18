@@ -12,12 +12,7 @@ library("badger")
 [![quanteda: quantitative analysis of textual data](https://cdn.rawgit.com/quanteda/quanteda/master/images/quanteda_logo.svg)](http://quanteda.io)
 
 <!-- badges: start -->
-[![CRAN Version](https://www.r-pkg.org/badges/version/quanteda)](https://CRAN.R-project.org/package=quanteda)
-`r badge_devel("quanteda/quanteda", "royalblue")`
-[![Downloads](https://cranlogs.r-pkg.org/badges/quanteda)](https://CRAN.R-project.org/package=quanteda)
-[![Total Downloads](thub.com/quanteda/quanteda/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/quanteda/quanteda/actions/workflows/check-standard.yaml)
-[![codecov](https://codecov.io/gh/quanteda/quanteda/branch/master/graph/badge.svg)](https://app.codecov.io/gh/quanteda/quanteda) [![DOI](https://zenodo.org/badge/5424649.svg)](https://zenodo.org/badge/latestdoi/5424649)
-[![DOI](http://joss.theoj.org/papers/10.21105/joss.00774/status.svg)](https://doi.org/10.21105/joss.00774)
+[![CRAN Version](https://www.r-pkg.org/badges/version/qua)](https://doi.org/10.21105/joss.00774)
 <!-- badges: end -->
 
 ## About
