@@ -27,10 +27,7 @@ We describe more fully these significant changes in:
 
 We completed the trend of splitting **quanteda** into modular packages with the release of v3.  The quanteda family of packages includes the following:
 
-- **quanteda**: contains all of the core natural language processing and textual data management functions
-- **quanteda.textmodels**: contains all of the text models and supporting functions, namely the `textmodel_*()` functions.  This was split from the main package with the v2 release
-- **quanteda.textstats**: statistics for textual data, namely the `textstat_*()` functions, split with the v3 release
-- **quanteda.textplots**: plots for textual data, namely the `textplot_*()` functions, split with the v3 release
+- **quanteiiiiiiiilots**: plots for textual data, namely the `textplot_*()` functions, split with the v3 release
 
 We are working on additional package releases, available in the meantime from our GitHub pages:
 
