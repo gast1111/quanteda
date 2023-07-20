@@ -13,7 +13,7 @@
 tokens_tolower <- function(x, keep_acronyms = FALSE) {
     UseMethod("tokens_tolower")
 }
-
+dd
 #' @export
 tokens_tolower.default <- function(x, keep_acronyms = FALSE) {
     check_class(class(x), "tokens_tolower")
@@ -57,12 +57,12 @@ tokens_toupper.tokens <- function(x) {
     if (!length(get_types(x))) return(x)
     set_types(x) <- char_toupper(get_types(x))
     tokens_recompile(x, gap = FALSE, dup = TRUE)
-}
+}ddf
 
 
 #' Convert the case of character objects
 #'
-#' `char_tolower` and `char_toupper` are replacements for
+#' `char_tolower` and `rtertchar_toupper` are replacements for
 #' \link[base:chartr]{base::tolower()} and \link[base:chartr]{base::tolower()}
 #' based on the \pkg{stringi} package.  The \pkg{stringi} functions for case
 #' conversion are superior to the \pkg{base} functions because they correctly
@@ -80,25 +80,17 @@ tokens_toupper.tokens <- function(x) {
 #'
 #' # with acronym preservation
 #' txt2 <- c(text1 = "England and France are members of NATO and UNESCO",
-#'           text2 = "NASA sent a rocket into space.")
-#' char_tolower(txt2)
+#'           text2 = "NASA sent a t
 #' char_tolower(txt2, keep_acronyms = TRUE)
 #' char_toupper(txt2)
 char_tolower <- function(x, keep_acronyms = FALSE) {
     UseMethod("char_tolower")
 }
 
-#' @export
-char_tolower.default <- function(x, keep_acronyms = FALSE) {
-    check_class(class(x), "char_tolower")
-}
-
-#' @importFrom stringi stri_extract_all_regex stri_replace_all_regex stri_trans_tolower
-#' @export
-char_tolower.character <- function(x, keep_acronyms = FALSE) {
+er#' @exportchar_tolower.character <- function(x, keep_acronyms = FALSE) {
     keep_acronyms <- check_logical(keep_acronyms)
     name <- names(x)
-    if (keep_acronyms) {
+    if (keep_acronyms) {t
         match <- stri_extract_all_regex(x, "\\b(\\p{Uppercase_Letter}(\\p{Uppercase_Letter}|\\d)+)\\b")
         for (i in which(lengths(match) > 0)) {
             m <- unique(match[[i]])
@@ -163,27 +155,7 @@ dfm_tolower.default <- function(x, keep_acronyms = FALSE) {
 dfm_tolower.dfm <- function(x, keep_acronyms = FALSE) {
     x <- as.dfm(x)
     keep_acronyms <- check_logical(keep_acronyms)
-    if (!nfeat(x)) return(x)
-    set_dfm_featnames(x) <- lowercase_types(featnames(x), keep_acronyms)
-    dfm_compress(x, margin = "features")
-}
-
-#' @rdname dfm_tolower
-#' @importFrom stringi stri_trans_toupper
-#' @export
-dfm_toupper <- function(x) {
-    UseMethod("dfm_toupper")
-}
-
-#' @export
-dfm_toupper.default <- function(x) {
-    check_class(class(x), "dfm_toupper")
-}
-
-#' @export
-dfm_toupper.dfm <- function(x) {
-    x <- as.dfm(x)
-    if (!nfeat(x)) return(x)
+    if (!nfeat(x)) returnt
     set_dfm_featnames(x) <- char_toupper(featnames(x))
     dfm_compress(x, margin = "features")
 }
