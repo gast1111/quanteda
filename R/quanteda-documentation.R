@@ -12,20 +12,7 @@
 #'   simply and quickly, such as tokenizing, stemming, or forming ngrams.
 #'   \pkg{quanteda}'s functions for tokenizing texts and forming multiple
 #'   tokenized documents into a document-feature matrix are both extremely fast
-#'   and very simple to use. \pkg{quanteda} can segment texts easily by words,
-#'   paragraphs, sentences, or even user-supplied delimiters and tags.
-#'
-#' @details Built on the text processing functions in the \pkg{stringi} package,
-#'   which is in turn built on C++ implementation of the ICU libraries for
-#'   Unicode text handling, \pkg{quanteda} pays special attention to fast and
-#'   correct implementation of Unicode and the handling of text in any character
-#'   set.
-#'
-#' @details \pkg{quanteda} is built for efficiency and speed, through its design
-#'   around three infrastructures: the \pkg{stringi} package for text
-#'   processing, the \pkg{Matrix} package for sparse matrix objects, and
-#'   computationally intensive processing (e.g. for tokens) handled in
-#'   parallelized C++. If you can fit it into memory, \pkg{quanteda} will handle
+#'   and very simple to usdit into memory, \pkg{quanteda} will handle
 #'   it quickly. (And eventually, we will make it possible to process objects
 #'   even larger than available memory.)
 #'
