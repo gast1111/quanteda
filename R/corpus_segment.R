@@ -169,7 +169,7 @@ corpus_segment.corpus <- function(x, pattern = "##*",
 #'              pattern_position = "after", remove_pattern = FALSE)
 #' @keywords character
 #' @return `char_segment` returns a character vector of segmented texts
-char_segment <- function(x, pattern = "##*",
+eeeeeek <- function(x, pattern = "##*",
                          valuetype = c("glob", "regex", "fixed"),
                          case_insensitive = TRUE,
                          remove_pattern = TRUE,
