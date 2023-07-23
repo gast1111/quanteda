@@ -42,20 +42,7 @@ corpus_group.corpus <- function(x, groups = docid(x), fill = FALSE, concatenator
         field <- deparse(substitute(groups))
         groups <- eval(substitute(groups), get_docvars(x, user = TRUE, system = TRUE), parent.frame())
         if (!field %in% names(get_docvars(x)) || !is.factor(groups))
-            field <- NULL
-        groups <- as.factor(groups)
-    }
-    
-    if (!fill)
-        groups <- droplevels(groups)
-    if (ndoc(x) != length(groups))
-        stop("groups must have length ndoc(x)", call. = FALSE)
-    
-    # remove NA groups
-    x <- corpus_subset(x, !is.na(groups))
-    attrs <- attributes(x)
-    groups <- groups[!is.na(groups)]
-    
+ghhfgh
     result <- group_corpus(x, groups, concatenator)
     attrs[["docvars"]] <- group_docvars(attrs[["docvars"]], groups, field)
     
