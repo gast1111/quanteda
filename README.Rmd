@@ -21,18 +21,6 @@ library("badger")
 
 For more details, see https://quanteda.io.
 
-## **quanteda** version 4
-
-The **quanteda** 4.0 is a major release that improves functionality and performance and further improves function consistency by removing previously deprecated functions.  It also includes significant new tokeniser rules that make the default tokeniser smarter than ever, with new Unicode and ICU-compliant rules enabling it to work more consistently with even more languages.
-
-We describe more fully these significant changes in:
-
-* an [article about the new external pointer tokens objects](https://quanteda.io/articles/pkgdown/tokens_xptr.html);
-* an [article showing performance benchmarks](https://quanteda.io/articles/pkgdown/benchmarks_xptr.html) for the new external pointer tokens objects, as well as some of the tokeniser improvements in v4; and
-* the [changelog for v4](https://github.com/quanteda/quanteda/blob/master/NEWS.md#quanteda-40) a full listing of the changes, improvements, and deprecations in v4.
-
-## The **quanteda** family of packages
-
 We completed the trend of splitting **quanteda** into modular packages with the release of v3.  The quanteda family of packages includes the following:
 
 - **quanteda**: contains all of the core natural language processing and textual data management functions
